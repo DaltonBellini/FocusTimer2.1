@@ -1,0 +1,191 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{ 
+    font-size:62.5% ;
+    --color-select:hsl(194, 62%, 57%);
+    --background-color-content: rgba(255, 255, 255, 0.411);
+    --background-color-body: #adadad;
+    --background-color-darkmode: #1e1f24e8;
+}
+
+body{ 
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: var(--background-color-body);
+
+    
+}
+.buttonDarkmode{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6rem;
+}
+.content.dark{ 
+    background-color: var(--background-color-darkmode);
+    
+}
+.time.dark{ 
+    color: white;
+}
+
+
+
+.content{ 
+
+    text-align: center;
+
+    
+    padding: 2rem;
+    border-radius: 3rem;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, .5);
+    background-color: var(--background-color-content);
+
+}
+
+
+
+.time{ 
+    font-size: 11.0rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    
+}
+
+
+
+.controls{ 
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 6rem;}
+
+img{ 
+    cursor: pointer;
+    
+    
+}
+.images{ 
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap:3.2rem ;
+    
+}
+
+
+/* ================= {Conf. Cards Select} =================*/
+.cardsOn-ThemeWhite{
+    background-color: var(--color-select);
+    width:13.8rem;
+    height: 15.2rem;
+    border-radius: 2.4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+}
+
+input{
+    width: 9rem;
+    height: 1.6rem;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    background-color: red;
+}
+input[type="range"]::--moz-range-thumb{
+    background-color: red;
+}
+input[type="range"]::-ms-thumb{
+    background-color: red;
+}
+
+
+
+
+button{ 
+    background-color: transparent;
+    border: none;
+}
+
+
+.hide{ 
+    display: none;
+}
+
+
+@media(min-width:50rem){ 
+    
+    .time{ 
+        font-size: 12.6rem;
+    }
+
+    .controls{ 
+        gap: 4rem;
+    }
+    .content{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+        padding: 5rem;
+    }
+}
+
+@media(min-width:65rem){ 
+
+    .content{
+        gap: 19rem;
+    }
+}
+
+
+/* Imagends Background */
+.image-futuristic-coffe{ 
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.image-futuristic-rain{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.image-futuristic-florest{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.image-futuristic-fire{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/index.js" defer type="module"></script>
+    <title>Focus Timer 2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main>
+        
+            
+        <div class="content ">
+            <img src="images/white-Theme.svg" class="buttonDarkmode" alt="">
+            <img src="images/dark-mode.svg"  class="buttonDarkmode hide buttonMoon" alt="">
+
+            <section>
+
+                <div class="time">
+                    <span class="minutes">25</span>
+                    <span>:</span>
+                    <span class="seconds">00</span>
+                </div>
+    
+                <div class="controls">
+                    <button class="play "> <img src="./images/play.svg" alt="ícone de play"></button>
+                    <button class="pause hide"><img src="images/pause.svg" alt=""></button>
+                    <button class="stop "> <img src="images/stop.svg" alt="ícone de stop"> </button>
+                    <button class="sum "><img src="images/sum.svg" alt="ícone de um botão de adição"></button>
+                    <button class="sub "><img src="images/sub.svg" alt="ícone de um botão de subtração"></button>
+
+
+                                            <!-- Darkmode -->
+
+
+                    <button class="playDark hide"> <img src="images-controls-darkmode/play-dark.svg" alt=""></button>
+                    <button class="pauseDark hide"> <img src="images-controls-darkmode/pause-darkmode.svg" alt=""></button>
+                    <button class="stopDark hide"> <img src="images-controls-darkmode/stop-dark.svg" alt=""></button>
+                    <button class="sumDark hide"><img src="images-controls-darkmode/sum-darkmode.svg" alt=""></button>
+                    <button class="subDark hide"><img src="images-controls-darkmode/sub-darkmode.svg" alt=""></button>
+                    
+                </div>
+    
+            </section>
+            
+    
+                <div class="images">
+                    <!-- selected and normal tree image -->
+                    <button class="buttonFlorestOff "><img src="images/florest.svg" alt="imagem de uma arvore"></button>
+                    
+
+                    <button class="cardsOn-ThemeWhite butonFlorestOn hide">
+                        <img src="images-select/florest-select.svg" alt="">
+                        <input type="range"  min="0" max="1" step="0.1" id="vol-control">
+                    </button>
+
+                    <!-- Selected rain image  -->
+                    <button class="buttonRainOff "> <img src="images/rain.svg" alt="imagem de chuva"></button>
+                    
+
+                    <button class="cardsOn-ThemeWhite buttonRainOn hide">
+                        <img src="images-select/rain-select.svg" alt="">
+                        <input type="range"  id="volumRain" min="0" max="1" step="0.1">
+                    </button>
+                
+                    <!-- Selected business image -->
+                    <button class="businessOff "><img src="images/business.svg" alt="imagem de comercio"></button>
+                    
+                    <button class="cardsOn-ThemeWhite businessOn hide">
+                        <img src="images-select/business-select.svg" alt="">
+                        <input type="range" id="volumBusiness" min="0" max="1" step="0.1">
+                    </button>
+                
+                    <!-- Selected fire image-->
+                    <button class="fireOff "><img src="images/fire.svg" alt="imagem de fogo"></button>
+                    
+                    <button class="cardsOn-ThemeWhite fireOn hide">
+                        <img src="images-select/fire-select.svg" alt="">
+                        <input type="range" id="volumFire" min="0" max="1" step="0.1">
+                    </button>
+                
+
+            
+            
+    
+            
+                    
+                </div>
+
+            
+
+        </div>
+
+        <img src="images/florest.jpg" class="image-futuristic-florest hide" alt="imagem futuristic de floresta">
+        <img src="images/rain.png" class="image-futuristic-rain hide" alt="imagem futuristica de chuva">
+        <img src="images/coffe.png" class="image-futuristic-coffe hide" alt="imagem futurista de café">
+        <img src="images/flores.png" class="image-futuristic-fire hide" alt="imagem futurista de fogo">
+
+    </main>
+</body>
+</html>
